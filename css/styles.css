@@ -147,25 +147,39 @@ color: #404bbf;
 .first-sect {
     background: #2e2f42;
     display: block;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
+    /* max-width: 1440px; */
+    max-width: 100%;
+    /* margin: 0 auto; */
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officemob@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+@media (min-resolution: 192dpi) {
+    .first-sect {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officemob@2x.jpg);
+    }
+}
+
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px;
+    line-height: 1.07; */
+    font-size: 36px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
     color: #ffffff;
-    max-width: 496px;
-    margin: 0 auto 48px;
+    /* max-width: 496px;
+    margin: 0 auto 48px; */
+    max-width: 216px;
+    margin: 0 52px 72px;
 }
 
 .button-text {
@@ -184,7 +198,9 @@ color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-}
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+} 
+
 
 .button-text:hover,
 .button-text:focus {
@@ -824,6 +840,25 @@ input::placeholder {
         max-width: 768px;
     }
 
+    .first-sect {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officetab@1x.jpg);
+    }
+    
+    @media (min-resolution: 192dpi) {
+            .first-sect {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officetab@2x.jpg);
+            }
+    }
+
+    .hero-title {
+        max-width: 496px;
+        margin: 0 auto 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
     .page {
     column-gap: 24px;
     row-gap: 72px;
@@ -844,6 +879,24 @@ input::placeholder {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .first-sect {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officedesc@1x.jpg);
+    }
+
+    @media (min-resolution: 192dpi) {
+        first-sect {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officedesc@2x.jpg);
+        }
+    }
+
+    .hero-title {
+        margin: 0 auto 48px;
     }
 
     .second-sect {
