@@ -160,7 +160,9 @@ color: #404bbf;
     background-size: cover;
 }
 
-@media (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
     .first-sect {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officemob@2x.jpg);
     }
@@ -395,8 +397,10 @@ padding-bottom: 32px;
 /** ==============FOURTH SECTION================ */
 
 .fourth-sect {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .card-subtitle {
@@ -413,8 +417,17 @@ padding-bottom: 32px;
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    /* column-gap: 24px;
+    row-gap: 48px; */
+}
+
+.card-image {
+    display: block;
+    width: 288px;
+    height: auto;
 }
 
 .card-list-item {
@@ -851,7 +864,9 @@ input::placeholder {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officetab@1x.jpg);
     }
     
-    @media (min-resolution: 192dpi) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) {
             .first-sect {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officetab@2x.jpg);
             }
@@ -886,6 +901,16 @@ input::placeholder {
         column-gap: 24px;
         row-gap: 64px;
     }
+
+    .card-list {
+        flex-direction: row;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .card-image {
+        width: 356px;
+    }
 }
 
 
@@ -904,7 +929,9 @@ input::placeholder {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officedesc@1x.jpg);
     }
 
-    @media (min-resolution: 192dpi) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), 
+        screen and (min-resolution: 192dpi) and (min-width: 1158px), 
+        screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         first-sect {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/officedesc@2x.jpg);
         }
@@ -958,5 +985,19 @@ input::placeholder {
     .third-sect {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .fourth-sect {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .card-list {
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .card-image {
+        width: 360px;
     }
 }
