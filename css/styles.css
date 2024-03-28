@@ -321,6 +321,8 @@ background: #404bbf;
 .photo-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 72px;
     /* gap: 24px; */
 }
@@ -875,10 +877,14 @@ input::placeholder {
         text-align: left;
     }
 
+    .team-container {
+        padding-left: 108px;
+    }
+
     .photo-list {
+        flex-direction: row;
         column-gap: 24px;
         row-gap: 64px;
-        margin-left: 108px;
     }
 }
 
@@ -947,5 +953,10 @@ input::placeholder {
 
     .page-text {
         font-weight: 400;
+    }
+
+    .third-sect {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
