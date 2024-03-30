@@ -638,6 +638,7 @@ overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* align-items: baseline; */
 }
 
@@ -646,10 +647,12 @@ overflow: hidden;
 }
 
 .logo-link {
+    /* display: inline-block; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
+    padding: 0;
 }
 
 .ground .part-logo {
@@ -669,11 +672,17 @@ overflow: hidden;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+    margin-bottom: 72px;
 }
 
 .footer-social-container {
     width: 208px;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 72px;
 }
 
 .footer-social-title {
@@ -712,12 +721,16 @@ overflow: hidden;
     background-color: #31D0AA;
 }
 
-.form-container{
+.form-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 453px;
+    width: 288px;
+    height: 136px;
+    /* width: 453px;
     height: 80px;
-    margin-left: 80px;
+    margin-left: 80px; */
 }
 
 .form-title {
@@ -731,18 +744,24 @@ overflow: hidden;
 
 .form {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 24px; */
+    gap: 16px;
 }
 
 .form-input {
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
     padding-left: 16px;
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
@@ -1124,6 +1143,36 @@ input::placeholder {
 
     .card-image {
         width: 356px;
+    }
+
+    .ground-container {
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+    margin-right: 24px;
+    }
+
+    .logo-link {
+        justify-content: flex-start;
+    }
+
+    .footer-social-container {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .form-container {
+        width: 453px;
+        height: 80px;
+        align-items: flex-start;
+    }
+
+    .form {
+        flex-direction: row;
+        gap: 24px;
     }
 }
 
