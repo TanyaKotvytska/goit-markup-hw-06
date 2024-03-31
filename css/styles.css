@@ -978,10 +978,9 @@ input::placeholder {
 }
 
 .checkbox-modal-field {
-    margin-bottom: 24px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    margin-bottom: 24px;
 }
 
 .check-text {
@@ -991,6 +990,10 @@ input::placeholder {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    /* display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px; */
 }
 
 .check-link {
@@ -1008,7 +1011,6 @@ input::placeholder {
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     fill: transparent;
-    /* display: inline-flex; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1184,6 +1186,21 @@ input::placeholder {
     .form {
         flex-direction: row;
         gap: 24px;
+    }
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
+
+    .modal-input {
+        width: 360px;
+    }
+
+    .modal-text {
+        width: 360px;
+        height: 120px;
     }
 }
 
